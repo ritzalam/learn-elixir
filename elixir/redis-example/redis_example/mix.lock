@@ -1,0 +1,4 @@
+%{
+  "redix": {:hex, :redix, "0.8.2", "c25158f905bcf8842e9a11411d65b9257ac70057c4330521d1a4d2a44b4f7ecf", [:mix], [], "hexpm"},
+  "redix_pubsub": {:hex, :redix_pubsub, "0.5.0", "ce238708d8c0c98a13e912e1d5ff093fc7958816e3cdffae5763c33a439f7701", [:mix], [{:redix, "~> 0.8", [hex: :redix, repo: "hexpm", optional: false]}], "hexpm"},
+}
