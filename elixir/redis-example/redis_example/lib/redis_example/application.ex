@@ -10,7 +10,8 @@ defmodule RedisExample.Application do
     children = [
       # Starts a worker by calling: RedisExample.Worker.start_link(arg)
       # {RedisExample.Worker, arg},
-      RedisExample.Subscriber
+      RedisExample.Subscriber,
+      RedisExample.Publisher
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

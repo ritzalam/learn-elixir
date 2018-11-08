@@ -25,6 +25,12 @@ defmodule RedisExample.Subscriber do
       {:ok, {names, refs}}
   end
 
+  def handle_info({_, _, _, :message, message}, state) do
+    #IO.puts(inspect msg)
+    RedisExample.Publisher.send(message.payload)
+    {:noreply, state}
+  end
+
   def handle_info(msg, state) do
     IO.puts(inspect msg)
     {:noreply, state}
